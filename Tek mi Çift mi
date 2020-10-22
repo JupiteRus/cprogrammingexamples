@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main(){
+
+    int a;
+
+            printf("Bir Sayi Giriniz : ");
+            scanf("%d",&a);
+
+
+                if(a % 2 == 0){
+                    printf("Bu sayi çift bir sayidir.");
+              
+                }else{
+                    printf("Bu sayi tek bir sayidir ");
+                }                     
+
+        return 0;
+}
