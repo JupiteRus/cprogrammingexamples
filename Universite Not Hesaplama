@@ -1,0 +1,63 @@
+#include <stdio.h>
+
+int main(){
+	
+	float a,b;	
+	
+		printf("Vize Notunuzu Giriniz =");
+	
+	    for(scanf(" %f",&a);a;a){
+	
+		if(a>100.0){
+			printf("\nNotu Hatali Girdiniz!");
+		    	printf("\nVize Notunuzu Tekrark Giriniz =");
+		    	scanf("%f",&a);
+				    continue;
+	    	}else if(a<0.0){
+		    	printf("\nNotu Hatali Girdiniz!");
+			printf("\nVize Notunuzu Tekrar Giriniz =");
+			scanf("%f",&a);
+			  continue;
+	    	}else{	
+			printf("\nIslem Yapiliyor...\n");
+		    	printf("Islem Yapiliyor...\n");		
+			    	break;
+		}
+	    }
+		    printf("\nFinal Notunuzu Giriniz =");
+
+
+    	for(scanf(" %f",&b);b;b){
+
+		 if(b>100.0){
+			printf("\nNotu Hatali Girdiniz!");
+			printf("\nFinal Notunuzu Tekrar Giriniz =");
+			scanf("%f",&b);
+			   continue;
+	    	}else if(b<0.0){
+	    		printf("\nNotu Hatali Girdiniz!");
+		    	printf("\nFinal Notunuzu Tekrar Giriniz =");
+			scanf("%f",&b);
+			  continue;
+		}else{
+			printf("\nIslem yapiliyor...\n");
+			printf("Islem Yapiliyor...\n");			
+		 	   break;
+		}
+	  }
+		
+		float ort;
+	
+			ort = ((a*40.0/100.0)+(b*60.0/100.0));
+	
+			if(ort<50.0){
+				printf("\nBu Dersten Kaldiniz");
+				printf("\nOrtalamaniz = %f",ort);	
+			}else{
+				printf("\nBu Dersi Gectiniz");	
+				printf("\nOrtalamaniz = %f",ort);
+			}
+	
+		return 0;
+	
+}
