@@ -36,7 +36,7 @@ int main(){
         }
         if(a % 2 == 0)
         {
-            printf("Girdiğiniz sayi cift sayidir\n");
+            printf("Girdiginiz sayi cift sayidir\n");
         }
         else
         {
