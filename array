@@ -1,0 +1,67 @@
+#include <stdio.h>
+
+int main(){
+
+    int array[] = {5, 44, 88, 73, 10, 5, 88, 12, 5, 24, 73, 5, 10, 30};
+    int a;
+    int sum = 0;
+        
+        printf("Bir sayi giriniz : ");
+        scanf("%d",&a);
+
+        
+                
+        for(int i = 0;i<14;i++)
+        {           
+            if(a == array[i])
+            {
+                printf("Girdiginiz sayidan dizide var\n");
+                break;           
+            }
+            else
+            {
+                continue;
+            }
+        }        
+        for(int i = 0;i<14;i++)
+        {          
+            if(a == array[i])
+            {
+                sum++;  
+            }
+            else
+            {
+                continue;
+            }
+        }
+        if(a % 2 == 0)
+        {
+            printf("Girdiğiniz sayi cift sayidir\n");
+        }
+        else
+        {
+            printf("Girdiginiz sayi tek sayidir\n");
+        }
+        for(int i = 2; i < a; i++)
+        {
+            if(a % i == 0)
+            {
+                printf("Girdiginiz sayi asal sayi değildir\n");
+                break;
+            }
+            else
+            {
+                if(a > i+1)
+                {
+                    continue;
+                }
+                else
+                {
+                    printf("Girdiginiz sayi asal sayidir\n");
+                }
+            }
+
+        }
+                    
+        printf("Girdiginiz sayidan dizide %d tane var",sum);
+} 
