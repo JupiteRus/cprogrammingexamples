@@ -46,7 +46,7 @@ int main(){
         {
             if(a % i == 0)
             {
-                printf("Girdiginiz sayi asal sayi değildir\n");
+                printf("Girdiginiz sayi asal sayi degildir\n");
                 break;
             }
             else
